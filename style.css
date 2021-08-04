@@ -1,0 +1,62 @@
+        body {
+            background-image: url('https://static-cse.canva.com/blob/140234/Rainbow-Gradient-Pink-and-Purple-Zoom-Virtual-Background.png');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        img {
+            width: 15rem;
+            height: 15rem;
+            object-fit: cover;
+        }
+
+        .col-md-4,
+        .col-sm-6,
+        .col-12 {
+            margin-bottom: 1.5rem;
+        }
+
+        .row {
+            display: flex;
+        }
+
+        .card {
+            flex: 5;
+            padding: 1em;
+        }
+
+        .card-title {
+            text-align: center;
+        }
+
+        .role {
+            font-size: small;
+            text-align: center;
+        }
+
+        .carousel-item img {
+            height: 30rem;
+        }
+
+        .carousel_bs {
+            margin-top: 4%;
+        }
+
+        .aboutus_content,
+        .aboutus_title, .card-text {
+            text-align: center;
+        }
+
+        .aboutus_title {
+            font-size: 4rem;
+            font-family: 'MonteCarlo', cursive;
+        }
+
+        .form_bs{
+            padding: 0 20%;
+        }
+
+        .sub_btn{
+            text-align: center;
+        }
