@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=MonteCarlo&display=swap" rel="stylesheet">
+    <style>
+        #bg-img {
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        .card-title {
+            text-align: center;
+        }
+
+        .link {
+            font-size: 1.5rem;
+            text-decoration: none;
+            margin: auto 5rem;
+        }
+
+        #navbar {
+            text-align: center;
+        }
+
+        .carousel-item img {
+            width: 15rem;
+            height: 30rem;
+            object-fit: cover;
+        }
+
+        body {
+            background-image: url('https://static-cse.canva.com/blob/140234/Rainbow-Gradient-Pink-and-Purple-Zoom-Virtual-Background.png');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .div_of_img {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden
+        }
+
+        .div_of_img img {
+            flex-shrink: 0;
+            min-width: 100%;
+            min-height: 100%
+        }
+
+        /* .card_img img {
+            height: 30rem;
+        } */
+
+        .carousel_bs {
+            margin-top: 4%;
+        }
+
+        .aboutus_title{
+            text-align: center;
+            font-size: 4rem;
+            font-family: 'MonteCarlo', cursive;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" style="opacity:0.7;">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="home.html">ZERO&trade;</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <h1 class="aboutus_title">Featured Pictures</h1>
+
+    <div class="container carousel_bs">
+        <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="4000">
+                    <img src="https://cdn.pixabay.com/photo/2021/07/26/01/47/woman-6493189_960_720.jpg"
+                        class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item" data-bs-interval="4000">
+                    <img src="https://cdn.pixabay.com/photo/2018/11/22/18/17/elephant-3832516_960_720.jpg"
+                        class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item" data-bs-interval="4000">
+                    <img src="https://cdn.pixabay.com/photo/2021/06/20/08/35/ginkgo-6350293_960_720.jpg"
+                        class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+    <br><br>
+
+    <h1 class="aboutus_title">Some of our best pictures</h1>
+
+    <div class="container">
+
+        <div class="card mb-3">
+            <div class="row g-0">
+                <div class="col-md-4 div_of_img">
+                    <img src="nature.jpg" class="img-fluid rounded-start" alt="...">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h5 class="card-title">Nature</h5>
+                        <p class="card-text">Nature, in the broadest sense, is the natural, physical, material world or
+                            universe.
+                            "Nature" can refer to the phenomena of the physical world, and also to life in general. The
+                            study of
+                            nature is a large, if not the only, part of science. Although humans are part of nature,
+                            human activity
+                            is often understood as a separate category from other natural phenomena. The word nature is
+                            borrowed
+                            from the Old French nature and is derived from the Latin word natura, or "essential
+                            qualities, innate
+                            disposition", and in ancient times, literally meant "birth". In ancient philosophy, natura
+                            is mostly
+                            used as the Latin translation of the Greek word physis (φύσις), which originally related to
+                            the
+                            intrinsic characteristics that plants, animals, and other features of the world develop of
+                            their own
+                            accord.</p>
+                        <p class="card-text"><small class="text-muted">- Ansel Adams (New York)</small></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card mb-3">
+            <div class="row g-0">
+                <div class="col-md-4 div_of_img">
+                    <img src="dog.jpg" class="img-fluid rounded-start" alt="...">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h5 class="card-title">Dogs</h5>
+                        <p class="card-text">The domestic dog (Canis familiaris or Canis lupus familiaris) is a
+                            domesticated
+                            descendant of the wolf. The dog derived from an ancient, extinct wolf, and the modern grey
+                            wolf is the
+                            dog's nearest living relative. The dog was the first species to be domesticated, by
+                            hunter–gatherers
+                            over 15,000 years ago, before the development of agriculture. Their long association with
+                            humans has led
+                            dogs to be uniquely adapted to human behavior, leading to a large number of domestic
+                            individuals and the
+                            ability to thrive on a starch-rich diet that would be inadequate for other canids.</p>
+                        <p class="card-text"><small class="text-muted">- Diane Arbus (Istanbul)</small></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card mb-3">
+            <div class="row g-0">
+                <div class="col-md-4 div_of_img">
+                    <img src="cat.jpg" class="img-fluid rounded-start" alt="...">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h5 class="card-title">Cats</h5>
+                        <p class="card-text">The cat (Felis catus) is a domestic species of small carnivorous mammal. It
+                            is the
+                            only domesticated species in the family Felidae and is often referred to as the domestic cat
+                            to
+                            distinguish it from the wild members of the family. A cat can either be a house cat, a farm
+                            cat or a
+                            feral cat; the latter ranges freely and avoids human contact. Domestic cats are valued by
+                            humans for
+                            companionship and their ability to hunt rodents. About 60 cat breeds are recognized by
+                            various cat
+                            registries. The cat is similar in anatomy to the other felid species: it has a strong
+                            flexible body,
+                            quick reflexes, sharp teeth and tractable claws adapted to killing small prey.</p>
+                        <p class="card-text"><small class="text-muted">- Robert Frank (Los Angeles)</small></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card mb-3">
+            <div class="row g-0">
+                <div class="col-md-4 div_of_img">
+                    <img src="family.jpg" class="img-fluid rounded-start" alt="...">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h5 class="card-title">Family</h5>
+                        <p class="card-text">In human society, family (from Latin: familia) is a group of people related
+                            either by
+                            consanguinity (by recognized birth) or affinity (by marriage or other relationship). The
+                            purpose of
+                            families is to maintain the well-being of its members and of society. Ideally, families
+                            would offer
+                            predictability, structure, and safety as members mature and participate in the community. In
+                            most
+                            societies, it is within families that children acquire socialization for life outside the
+                            family, and
+                            acts as the primary source of attachment, nurturing, and socialization for humans.</p>
+                        <p class="card-text"><small class="text-muted">- W. Eugene Smith (Paris)</small></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card mb-3">
+            <div class="row g-0">
+                <div class="col-md-4 div_of_img">
+                    <img src="bird.jpg" class="img-fluid rounded-start" alt="...">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h5 class="card-title">Birds</h5>
+                        <p class="card-text">Birds are a group of warm-blooded vertebrates constituting the class Aves
+                            /ˈeɪviːz/,
+                            characterised by feathers, toothless beaked jaws, the laying of hard-shelled eggs, a high
+                            metabolic
+                            rate, a four-chambered heart, and a strong yet lightweight skeleton. Birds live worldwide
+                            and range in
+                            size from the 5.5 cm (2.2 in) bee hummingbird to the 2.8 m (9 ft 2 in) ostrich. There are
+                            about ten
+                            thousand living species, more than half of which are passerine, or "perching" birds. Birds
+                            have wings
+                            whose development varies according to species; the only known groups without wings are the
+                            extinct moa
+                            and elephant birds. Wings, which evolved from forelimbs, gave birds the ability to fly,
+                            although further
+                            evolution has led to the loss of flight in some birds, including ratites, penguins, and
+                            diverse endemic
+                            island species.</p>
+                        <p class="card-text"><small class="text-muted">- Andreas Gursky (Jakarta)</small></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card mb-3">
+            <div class="row g-0">
+                <div class="col-md-4 div_of_img">
+                    <img src="flower.jpg" class="img-fluid rounded-start" alt="...">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h5 class="card-title">Flowers</h5>
+                        <p class="card-text">A flower, sometimes known as a bloom or blossom, is the reproductive
+                            structure found
+                            in flowering plants (plants of the division Magnoliophyta, also called angiosperms). The
+                            biological
+                            function of a flower is to facilitate reproduction, usually by providing a mechanism for the
+                            union of
+                            sperm with eggs. Flowers may facilitate outcrossing (fusion of sperm and eggs from different
+                            individuals
+                            in a population) resulting from cross pollination or allow selfing (fusion of sperm and egg
+                            from the
+                            same flower) when self-pollination occurs. The two types of pollination are:
+                            self-pollination and
+                            cross-pollination.</p>
+                        <p class="card-text"><small class="text-muted">- Walker Evans (London)</small></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card mb-3">
+            <div class="row g-0">
+                <div class="col-md-4 div_of_img">
+                    <img src="mumbai.jpg" class="img-fluid rounded-start" alt="...">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h5 class="card-title">Mumbai</h5>
+                        <p class="card-text">Mumbai (English: /mʊmˈbaɪ/, Marathi: [ˈmumbəi]; also known as Bombay
+                            /bɒmˈbeɪ/, the
+                            official name until 1995) is the capital city of the Indian state of Maharashtra. According
+                            to the
+                            United Nations, as of 2018, Mumbai is the second-most populous city in the country after
+                            Delhi and the
+                            seventh-most populous city in the world with a population of roughly 20 million. As per
+                            Indian
+                            government population census of 2011, Mumbai was the most populous city in India with an
+                            estimated city
+                            proper population of 12.5 million living under Municipal Corporation of Greater Mumbai.
+                            Mumbai is the
+                            centre of the Mumbai Metropolitan Region, the sixth most populous metropolitan area in the
+                            world with a
+                            population of over 23 million.</p>
+                        <p class="card-text"><small class="text-muted">- Frans Lanting (Mumbai)</small></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card mb-3">
+            <div class="row g-0">
+                <div class="col-md-4 div_of_img">
+                    <img src="sunset.jpg" class="img-fluid rounded-start" alt="...">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h5 class="card-title">Sunsets</h5>
+                        <p class="card-text">Sunset, also known as sundown, is the daily disappearance of the Sun below
+                            the horizon
+                            due to Earth's rotation. As viewed from everywhere on Earth (except the North and South
+                            poles), the
+                            equinox Sun sets due west at the moment of both the Spring and Autumn equinox. As viewed
+                            from the
+                            Northern Hemisphere, the sun sets to the northwest (or not at all) in the Northern
+                            hemisphere's spring
+                            and summer, and to the southwest in the autumn and winter; these seasons are reversed for
+                            the Southern
+                            Hemisphere. The time of sunset is defined in astronomy as the moment when the upper limb of
+                            the Sun
+                            disappears below the horizon.</p>
+                        <p class="card-text"><small class="text-muted">- Cindy Sherman (Tokyo)</small></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card mb-3">
+            <div class="row g-0">
+                <div class="col-md-4 div_of_img">
+                    <img src="music.jpg" class="img-fluid rounded-start" alt="...">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h5 class="card-title">Music</h5>
+                        <p class="card-text">Music is the art of arranging sounds in time to produce a composition
+                            through the
+                            elements of melody, harmony, rhythm, and timbre. It is one of the universal cultural aspects
+                            of all
+                            human societies. General definitions of music include common elements such as pitch (which
+                            governs
+                            melody and harmony), rhythm (and its associated concepts tempo, meter, and articulation),
+                            dynamics
+                            (loudness and softness), and the sonic qualities of timbre and texture (which are sometimes
+                            termed the
+                            "color" of a musical sound). Different styles or types of music may emphasize, de-emphasize
+                            or omit some
+                            of these elements.</p>
+                        <p class="card-text"><small class="text-muted">- Don McCullin (Kuala Lumpur)</small></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
