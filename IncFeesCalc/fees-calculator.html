@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="fees-calculator.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Incorporation Fees Calculator</h1>
+        <div class="row">
+            <div class="col-md-5 card-1">
+                <h3>Enter Company Details</h3>
+                <div class="container">
+                    <select name="company-type" id="company-deets" class="form-control" required>
+                        <option value="" disabled selected hidden>Select Company</option>
+                        <option value="One Person Company" class="dropdown-item">One Person Company</option>
+                        <option value="Private Limited Company" class="dropdown-item">Private Limited Company</option>
+                        <option value="Limited Liability Partnership Company" class="dropdown-item">Limited Liability
+                            Partnership Company</option>
+                    </select>
+                </div>
+
+                <div class="container">
+                    <select name="state" id="state" class="form-control" placeholder="State" required>
+                        <option value="" disabled selected hidden>Select State</option>
+                        <!-- <option value="">Andaman and Nicobar Islands</option>
+                        <option value="">Andhra Pradesh</option>
+                        <option value="">Arunachal Pradesh</option>
+                        <option value="">Assam</option>
+                        <option value="">Bihar</option>
+                        <option value="">Chandigarh</option>
+                        <option value="">Chhattisgarh</option>
+                        <option value="">Dadra and Nagar Haveli and Daman & Diu</option>
+                        <option value="">Goa</option>
+                        <option value="">Gujarat</option> -->
+                        <option value="Delhi">Delhi</option>
+                        <option value="Haryana">Haryana</option>
+                        <!-- <option value="">Himachal Pradesh</option>
+                        <option value="">Jammu & Kashmir</option>
+                        <option value="">Jharkhand</option>
+                        <option value="">Karnataka</option>
+                        <option value="">Kerala</option>
+                        <option value="">Ladakh</option>
+                        <option value="">Lakshadweep</option>
+                        <option value="">Madhya Pradesh</option>
+                        <option value="">Maharashtra</option>
+                        <option value="">Manipur</option>
+                        <option value="">Meghalaya</option>
+                        <option value="">Mizoram</option>
+                        <option value="">Nagaland</option>
+                        <option value="">Odisha</option>
+                        <option value="">Puducherry</option>
+                        <option value="">Punjab</option>
+                        <option value="">Rajasthan</option>
+                        <option value="">Sikkim</option>
+                        <option value="">Tamil Nadu</option>
+                        <option value="">Telangana</option>
+                        <option value="">The Government of NCT of Delhi</option>
+                        <option value="">Tripura</option>
+                        <option value="">Uttar Pradesh</option>
+                        <option value="">Uttarakhand</option>
+                        <option value="">West Bengal</option> -->
+                    </select>
+                </div>
+
+                <div class="container">
+                    <input type="number" name="partners" id="directors" placeholder="Number of Directors"
+                        class="form-control" required min="2">
+                </div>
+
+                <div class="container">
+                    <input type="number" name="partners-contro" id="capital" placeholder="Share Capital"
+                        class="form-control" required>
+                </div>
+
+                <button id="calc-btn" onclick="calc();" class="btn btn-primary">Calculate</button>
+            </div>
+
+            <div class="col-md-6">
+                <div class="upper-half card-1">
+                    <h3>Total cost </h3>
+                    <p>&#8377; <span id="totalIncCost">0.00</span></p>
+                </div>
+
+                <!-- <small>Click for more details</small> -->
+
+                <div class="lower-half card-1">
+                    <div class="lower-half-sub" style="margin-top: 5%;">
+                        <!-- <div class="dropdown">
+                            <button class="btn form-control" type="button" data-bs-toggle="dropdown">
+                                <span>ROC Fees</span> - <span>1000</span>
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li class="dropdown-item"><span>AoA</span> - <span>0</span></li>
+                                <li class="dropdown-item"><span>MoA</span> - <span>0</span></li>
+                                <li class="dropdown-item"><span>SPICe+ PART A</span> - <span>1000</span></li>
+                                <li class="dropdown-item"><span>SPICe+ PART B</span> - <span>0</span></li>
+                            </ul>
+                        </div> -->
+
+                        <div class="dropdown">
+                            <div class="btn form-control" type="button" data-bs-toggle="dropdown">
+                                <span>Stamp Duty and Government Fees</span> - <span id="stampDutyFees">0</span>
+                            </div>
+                            <!-- <ul class="dropdown-menu">
+                                <li class="dropdown-item"><span>AoA</span> - <span>500</span></li>
+                                <li class="dropdown-item"><span>INC-32</span> - <span>10</span></li>
+                                <li class="dropdown-item"><span>MoA</span> - <span>200</span></li>
+                            </ul> -->
+                        </div>
+
+                        <!-- <div class="dropdown">
+                            <div class="btn form-control">
+                                <span>Government Fees</span> - <span>1710</span>
+                            </div>
+                        </div> -->
+
+                        <div class="dropdown">
+                            <div class="btn form-control" type="button" data-bs-toggle="dropdown">
+                                <span>Professional Fees</span> - <span>10000</span>
+                            </div>
+                            <!-- <ul class="dropdown-menu">
+                                <li class="dropdown-item"><span>Subtotal</span> - <span>8499</span></li>
+                                <li class="dropdown-item"><span>Tax</span> - <span>1529.82</span></li>
+                            </ul> -->
+                        </div>
+
+                        <div class="dropdown">
+                            <div class="btn form-control">
+                                <span>GST (18%)</span> - <span>1800</span>
+                            </div>
+                        </div>
+
+                        <div class="dropdown">
+                            <div class="btn form-control">
+                                <span>Total Incorporation Cost</span> - <span id="totalIncCost2">0</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="fees-calculator.js"></script>
+</body>
+
+</html>
